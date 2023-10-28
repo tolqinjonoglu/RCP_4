@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 bool Triangle(int a, int b, int c) {
     if (a != b && b != c && a != c) { // Check if all sides are different
         if (a * a + b * b == c * c || b * b + c * c == a * a || a * a + c * c == b * b) {
@@ -11,14 +11,14 @@ bool Triangle(int a, int b, int c) {
 
 int main() {
     int a, b, c;
-    std::cin >> a;
-    std::cin >> b;
-    std::cin >> c;
+    cin >> a;
+    cin >> b;
+    cin >> c;
 
     if (Triangle(a, b, c)) {
-        std::cout << "Yes";
+        cout << "Yes";
     } else {
-        std::cout << "No";
+        cout << "No";
     }
 
     return 0;
