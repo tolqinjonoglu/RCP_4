@@ -1,12 +1,17 @@
 #include <iostream>
 using namespace std;
-float func (float j){
-    return j*1000;
+double convertToMeters(double km) {
+    return km * 1000;
 }
 
-int main(){
-    float j;
-    cin>>j;
-    cout<<func(j);
+int main() {
+    double km;
+    
+    cin >> km;
+    
+    double meters = convertToMeters(km);
+    
+    cout << "" << meters << endl;
+    
     return 0;
 }
