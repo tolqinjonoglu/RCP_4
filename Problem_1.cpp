@@ -1,14 +1,23 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
-    float func(float x, float y){
-        return x/y;
-    }
-int main (){
-    float j,s;
-    cin>>j;
-    cin>>s;
+
+double divideNumbers(double a, double b) {
+    return a / b;
+}
+
+int main() {
+    double a, b;
     
-    cout<< setprecision(3) <<func(j,s);
+    cin >> a;
+    
+    cin >> b;
+    
+    double result = divideNumbers(a, b);
+    
+    cout << fixed << setprecision(3);
+    
+    cout << "" << result << endl;
+    
     return 0;
 }
